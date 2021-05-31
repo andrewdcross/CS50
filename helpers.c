@@ -35,19 +35,19 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 
             // applying sepia formula given in pset
             int sepRed = round(0.393 * red + 0.769 * green + 0.189 * blue);
-            if (sepRed >= 255)
+            if (sepRed > 255)
             {
                 sepRed = 255;
             }
 
             int sepGreen = round(0.349 * red + 0.686 * green + 0.168 * blue);
-            if (sepGreen >= 255)
+            if (sepGreen > 255)
             {
                 sepGreen = 255;
             }
 
             int sepBlue = round(0.272 * red + 0.534 * green + 0.131 * blue);
-            if (sepBlue >= 255)
+            if (sepBlue > 255)
             {
                 sepBlue = 255;
             }
